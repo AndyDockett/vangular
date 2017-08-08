@@ -12,14 +12,14 @@ import { Post } from './post';
 export class PostsService {
 
 
-	private postsUrl = "https://www.womad.cl/app/wp-json/wp/v2/";
+	private postsUrl = "http://podcasts.cl/index.php/wp-json/wp/v2/";
 
 constructor(private http: Http) { }
 
 getPosts(): Observable<Post[]> {
 
     return this.http
-      .get(this.postsUrl + 'posts')
+      .get(this.postsUrl + 'posts/?categories=2')
       .map((res: Response) => res.json());
 
 

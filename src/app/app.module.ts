@@ -8,13 +8,17 @@ import { AppComponent } from './app.component';
 import { PostListComponent } from './posts/post-list/post-list.component';
 import { PostSingleComponent } from './posts/post-single/post-single.component';
 import { NavComponent } from './nav/nav.component';
+import { CoverComponent } from './cover/cover.component';
+import { HomeOctComponent } from './home-oct/home-oct.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PostListComponent,
     PostSingleComponent,
-    NavComponent
+    NavComponent,
+    CoverComponent,
+    HomeOctComponent
   ],
   imports: [  
   	BrowserModule,

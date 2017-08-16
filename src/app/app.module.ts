@@ -12,6 +12,7 @@ import { NavComponent } from './nav/nav.component';
 import { CoverComponent } from './cover/cover.component';
 import { HomeOctComponent } from './home-oct/home-oct.component';
 import { ApostListComponent } from './aposts/apost-list/apost-list.component';
+import { BpostListComponent } from './bposts/bpost-list/bpost-list.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { ApostListComponent } from './aposts/apost-list/apost-list.component';
     PostSingleComponent,
     NavComponent,
     CoverComponent,
-    HomeOctComponent
+    HomeOctComponent,
+    BpostListComponent
   
   ],
   imports: [  

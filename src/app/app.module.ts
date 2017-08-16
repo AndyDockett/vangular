@@ -16,6 +16,7 @@ import { ApostListComponent } from './aposts/apost-list/apost-list.component';
 import { BpostListComponent } from './bposts/bpost-list/bpost-list.component';
 import { CpostListComponent } from './cposts/cpost-list/cpost-list.component';
 import { DpostListComponent } from './dposts/dpost-list/dpost-list.component';
+import { EpostListComponent } from './eposts/epost-list/epost-list.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { DpostListComponent } from './dposts/dpost-list/dpost-list.component';
     ApostListComponent,
     BpostListComponent,
     CpostListComponent,
-    DpostListComponent
+    DpostListComponent,
+    EpostListComponent
   
   ],
   imports: [  

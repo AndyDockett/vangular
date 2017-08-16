@@ -1,18 +1,8 @@
-/* add css for margin fix -- this will not be needed after beta */
 
-.card-deck .card {
-    margin-left: 15px;
-    margin-right: 15px;
-}
-
-.card-deck .card:not(:last-child) {
-    margin-right: 15px;
-}
-
-.card-deck .card:not(:first-child) {
-    margin-left: 15px;
-}
 
 .jumbotron
 {margin-left: 0px;
-margin-right: 0px;}
+margin-right: 0px;
+width:100%;
+text-align: center;
+margin-top: 36px;}

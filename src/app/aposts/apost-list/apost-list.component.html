@@ -1,23 +1,27 @@
-<p>
-  apost-list works!
-</p>
-<ul>
-  <li *ngFor="let post of posts">
-    {{ post.title.rendered }}
-  </li>
-</ul>
 
-<div class="card-deck">
-  <div class="card" *ngFor="let post of posts" (click)="selectPost(post.slug)"  >
-    <img class="card-img-top article"  src="{{post.better_featured_image.source_url}}" alt="Card image cap">
-   
 
-    <div class="card-block">
-      <h4 class="card-title">{{ post.title.rendered }}</h4>
-      <p class="card-text" [innerHTML]="post.excerpt.rendered"></p>
+<!--Card Deck-->
+<div class="card-deck">  
+
+<!--Card-->
+<div class="card" *ngFor="let post of posts" (click)="selectPost(post.slug)"  >
+
+    <!--Card image-->
+    <img class="img-fluid" src="{{post.better_featured_image.source_url}}" alt="Card image cap">
+
+    <!--Card content-->
+    <div class="card-body">
+        <!--Title-->
+        <h4 class="card-title">{{ post.title.rendered }}</h4>
+        <!--Text
+        <p class="card-text">{{post.acf.direccion}}</p>
+
+        
+        <a routerlink="/" class="btn btn-primary">Ver Mas</a>-->
     </div>
-    <div class="card-footer">
-    <a routerlink="/" class="btn btn-primary">Go somewhere</a>
-    </div>
-  </div>
 
+</div>
+<!--/.Card-->
+
+</div>
+<!--/.Card Deck-->

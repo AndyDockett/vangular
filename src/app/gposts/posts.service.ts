@@ -19,7 +19,7 @@ constructor(private http: Http) { }
 getPosts(): Observable<Post[]> {
 
     return this.http
-      .get(this.postsUrl + 'posts/?categories=13')
+      .get(this.postsUrl + 'posts/?categories=18')
       .map((res: Response) => res.json());
 
 

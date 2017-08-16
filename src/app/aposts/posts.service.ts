@@ -12,7 +12,7 @@ import { Post } from './post';
 export class PostsService {
 
 
-	private postsUrl = "http://podcasts.cl/index.php/wp-json/wp/v2/";
+	private postsUrl = "http://35.192.211.212/index.php/wp-json/wp/v2/";
 
 constructor(private http: Http) { }
 

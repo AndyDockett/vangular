@@ -1,0 +1,26 @@
+
+<!--Card Deck-->
+<div class="card-deck">  
+
+<!--Card-->
+<div class="card" *ngFor="let post of posts" (click)="selectPost(post.slug)"  >
+
+    <!--Card image-->
+    <img class="img-fluid" src="{{post.better_featured_image.source_url}}" alt="Card image cap">
+
+    <!--Card content-->
+    <div class="card-body">
+        <!--Title-->
+        <h4 class="card-title">{{ post.title.rendered }}</h4>
+        <!--Text
+        <p class="card-text">{{post.acf.direccion}}</p>
+
+        
+        <a routerlink="/" class="btn btn-primary">Ver Mas</a>-->
+    </div>
+
+</div>
+<!--/.Card-->
+
+</div>
+<!--/.Card Deck-->

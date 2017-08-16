@@ -21,6 +21,7 @@ import { FpostListComponent } from './fposts/fpost-list/fpost-list.component';
 import { GpostListComponent } from './gposts/gpost-list/gpost-list.component';
 import { HpostListComponent } from './hposts/hpost-list/hpost-list.component';
 import { IpostListComponent } from './iposts/ipost-list/ipost-list.component';
+import { JpostListComponent } from './jposts/jpost-list/jpost-list.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { IpostListComponent } from './iposts/ipost-list/ipost-list.component';
     FpostListComponent,
     GpostListComponent,
     HpostListComponent,
-    IpostListComponent
+    IpostListComponent,
+    JpostListComponent
   
   ],
   imports: [  

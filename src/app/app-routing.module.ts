@@ -11,6 +11,7 @@ import { EpostListComponent } from './eposts/epost-list/epost-list.component';
 import { FpostListComponent } from './fposts/fpost-list/fpost-list.component';
 import { GpostListComponent } from './gposts/gpost-list/gpost-list.component';
 import { HpostListComponent } from './hposts/hpost-list/hpost-list.component';
+import { IpostListComponent } from './iposts/ipost-list/ipost-list.component';
 
 import { HomeOctComponent } from './home-oct/home-oct.component';
 

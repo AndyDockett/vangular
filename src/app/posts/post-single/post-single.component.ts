@@ -7,9 +7,7 @@ import { Router, ActivatedRoute, Params } from '@angular/router';
   selector: 'app-post-single',
   templateUrl: './post-single.component.html',
   styleUrls: ['./post-single.component.scss'],
-    providers: [PostsService],
-    
-
+    providers: [PostsService]
 })
 export class PostSingleComponent implements OnInit {
 
@@ -24,8 +22,6 @@ export class PostSingleComponent implements OnInit {
         this.post = res[0];
       });
   }
-
-
 
   ngOnInit() {
 

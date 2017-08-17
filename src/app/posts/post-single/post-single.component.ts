@@ -11,6 +11,10 @@ import { Router, ActivatedRoute, Params } from '@angular/router';
 })
 export class PostSingleComponent implements OnInit {
 
+  title: string = 'My first AGM project';
+  lat: number = 51.678418;
+  lng: number = 7.809007;
+
   post: Post;
 
   constructor( private postsService: PostsService, private route: ActivatedRoute ) { }

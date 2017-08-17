@@ -23,6 +23,8 @@ import { HpostListComponent } from './hposts/hpost-list/hpost-list.component';
 import { IpostListComponent } from './iposts/ipost-list/ipost-list.component';
 import { JpostListComponent } from './jposts/jpost-list/jpost-list.component';
 
+import { AgmCoreModule } from '@agm/core';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -42,13 +44,20 @@ import { JpostListComponent } from './jposts/jpost-list/jpost-list.component';
     GpostListComponent,
     HpostListComponent,
     IpostListComponent,
-    JpostListComponent
+    JpostListComponent,
+   
+       
+
   
   ],
   imports: [  
   	BrowserModule,
   	HttpModule,
-    Wpng2RoutingModule
+    Wpng2RoutingModule,
+     AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyAlEJMwNuDsoPFKJ6VWHHyuG45SlsTN7gs'
+    }),
+  
   ],
   providers: [],
   bootstrap: [AppComponent]

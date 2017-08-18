@@ -1,5 +1,5 @@
 <div *ngIf="post">
-  <h1>{{ post.title.rendered }} {{post.acf.lat}}  {{post.acf.lon}}</h1>
+  <h1>{{ post.title.rendered }} {{post.acf.lat}}  {{post.acf.mapz.lat}} </h1>
   <div [innerHTML]="post.content.rendered"></div>
 </div>
 <div *ngIf="!post">
@@ -11,6 +11,7 @@
 <!-- this creates a google map on the page with the given lat/lng from -->
 <!-- the component as the initial center of the map: -->
 <agm-map [latitude]="lat" [longitude]="lng">
-
+  <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
 </agm-map>
+
 
